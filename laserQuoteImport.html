@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 10px;
+  background-color:rgba(24,252,251,1);
+}
+
+/* Clearfix (clear floats) */
+#options::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+<head>
+	<title>Get Quote</title>
+</head>
+<body style="background-color:rgba(225,223,230,1);">
+
+	<div id="Header">
+		<center>Get Quote</center>
+	</div>
+	<div>
+
+	<div id="mainContainer" style="background-color:rgba(225,223,230,1);">
+		<div id="stepOne" style="background-color:rgba(245,252,251,1); border-radius: 5px; margin: 10px;">
+			<h1>Choose Material</h1>
+			<div id="options" style="border-radius: 5px; margin: 10px; overflow: auto;">
+				<div id="acrylic" class="column" >
+					acrylic
+				</div>
+				<div id="Birch" class="column">
+					Baltic Birch
+				</div>
+				<div id="Silicon" class="column">
+					Silicon
+				</div>
+				<div id="Neoprem" class="column">
+					Neoprem
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+	<div id="mainContainer" style="background-color:rgba(225,223,230,1);">
+		<div id="stepOne" style="background-color:rgba(245,252,251,1); border-radius: 5px; margin: 10px;">
+			<h1>Choose Needed Material Size</h1>
+			<div id="options" style="border-radius: 5px; margin: 10px; overflow: auto;">
+				<div id="acrylic" class="column" >
+					acrylic
+				</div>
+				<div id="Birch" class="column">
+					Baltic Birch
+				</div>
+				<div id="Silicon" class="column">
+					Silicon
+				</div>
+				<div id="Neoprem" class="column">
+					Neoprem
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	
+	var para = document.createElement("p");
+	var node = document.createTextNode("This is new.");
+	para.appendChild(node);
+
+	var element = document.getElementById("options");
+	element.appendChild(para);
+</script>
+
+</html>
